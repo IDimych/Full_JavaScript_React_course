@@ -1,36 +1,19 @@
-// "use strict";
+"use strict";
 
-a = 15;
-console.log(a);
+let number = 4.6;
 
-let number  = 5;
-const leftBorderWidth = 1;
+console.log(4/0);
+console.log(-4/0);
+console.log('string' * 9);
 
-console.log(number);
+const persone = 'Alex';
+const personeN = '5';
 
+const bool = true;
 
-number = 10;
-console.log(number);
+console.log(something);
 
-// leftBorderWidth = 10; 
+let und;
+console.log(und);
 
-const obj = {
-  a: 50
-};
-console.log(obj);
-
-obj.a = 10;
-console.log(obj);
-
-console.log(name);
-var name = 'Ivan';
-
-name = 'Alex';
-
-{
-  // let result = 50;
-  var result = 50;
-}
-
-console.log(result);
 
