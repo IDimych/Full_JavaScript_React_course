@@ -17,3 +17,7 @@ console.log(obj);
 obj.a = 10;
 console.log(obj);
 
+console.log(name)
+var name = 'Ivan';
+
+name = 'Alex';
