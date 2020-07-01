@@ -21,3 +21,11 @@ console.log(name)
 var name = 'Ivan';
 
 name = 'Alex';
+
+{
+  // let result = 50;
+  var result = 50;
+}
+
+console.log(result);
+
