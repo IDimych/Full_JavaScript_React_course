@@ -1,26 +1,10 @@
 "use strict";
 
-// alert('Hello');
+const category = 'toys';
 
-// const result = confirm("Are you here?");
-// console.log(result);
+console.log('http://someurl.com/' + category);
+console.log(`http://someurl.com/${category}`);
 
-// const answer = +prompt("Вам есть 18?", "18");
-// console.log(answer);
-// console.log(typeof (answer));
+const user = "Ivan";
 
-const answers = [];
-
-// answers[0] = prompt('Как ваше имя?', '');
-// answers[1] = prompt('Как вашa фамилия?', '');
-// answers[2] = prompt('Сколько вам лет?', '');
-
-// document.write(answers);
-
-console.log(typeof(answers));
-
-
-
-
-
-
+alert(`Привет, ${user}`);
