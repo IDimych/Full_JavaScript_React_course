@@ -23,42 +23,23 @@
 
 'use strict';
 
-// Задание 1
-let NumberOfFilms = 0;
-NumberOfFilms = prompt('Сколько фильмов вы посмотрели?','');
-console.log(NumberOfFilms);
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?','');
 
-// Задание 2
-let personalMovieDB = {
-  coutn : '',
+const personalMovieDB = {
+  coint: numberOfFilms,
   movies: {},
   actors: {},
   genres: [],
   private: false
 };
 
+const a = prompt('Один из последних просмотренных фильмов?',''),
+      b = prompt('На сколько оцените его?',''),
+      c = prompt('Один из последних просмотренных фильмов?',''),
+      d = prompt('На сколько оцените его?','');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
 console.log(personalMovieDB);
-
-// Задание 3
-// 3) Задайте пользователю по два раза вопросы:
-//     - 'Один из последних просмотренных фильмов?'
-//     - 'На сколько оцените его?'
-// Ответы стоит поместить в отдельные переменные
-// Записать ответы в объект movies в формате: 
-//     movies: {
-//         'logan': '8.1'
-//     }
-
-let nameFilm = '';
-let ball = 0;
-
-nameFilm = prompt('Один из последних просмотренных фильмов?','');
-ball = prompt('На сколько оцените его?','')
-
-let movies = {
-  nameFilm: nameFilm,
-  ball: ball
-};
-
-console.log(movies);
 
