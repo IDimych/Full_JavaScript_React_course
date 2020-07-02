@@ -1,10 +1,41 @@
 "use strict";
 
-const category = 'toys';
+console.log('arr' + " - object");
+console.log(4 + " - object");
+console.log(4 + "5");
+console.log(4 + +"5");
 
-console.log('http://someurl.com/' + category);
-console.log(`http://someurl.com/${category}`);
+let incr = 10,
+    decr = 10;
 
-const user = "Ivan";
+incr++;
+decr--;
 
-alert(`Привет, ${user}`);
+console.log(incr);
+console.log(decr);
+
+console.log('Постфиксная операция')
+console.log(incr++);
+console.log(decr--);
+
+console.log('Префиксная операция')
+console.log(++incr);
+console.log(--decr);
+
+console.log('5%2');
+console.log(5%2);
+
+console.log(2*4 == 8);
+console.log(2*4 == '8');
+console.log(2*4 === '8');
+console.log(2*4 === 8);
+
+const isChecket = true,
+      isClose = true;
+
+console.log(isChecket && isClose);
+console.log(isChecket || isClose);
+
+
+
+
