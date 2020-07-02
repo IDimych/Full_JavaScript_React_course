@@ -1,41 +1,64 @@
-"use strict";
+/* Задание на урок:
 
-console.log('arr' + " - object");
-console.log(4 + " - object");
-console.log(4 + "5");
-console.log(4 + +"5");
+1) Создать переменную numberOfFilms и в неё поместить ответ от пользователя на вопрос:
+'Сколько фильмов вы уже посмотрели?'
 
-let incr = 10,
-    decr = 10;
+2) Создать объект personalMovieDB и в него поместить такие свойства:
+    - count - сюда передается ответ на первый вопрос
+    - movies - в это свойство поместить пустой объект
+    - actors - тоже поместить пустой объект
+    - genres - сюда поместить пустой массив
+    - privat - в это свойство поместить boolean(логическое) значение false
 
-incr++;
-decr--;
+3) Задайте пользователю по два раза вопросы:
+    - 'Один из последних просмотренных фильмов?'
+    - 'На сколько оцените его?'
+Ответы стоит поместить в отдельные переменные
+Записать ответы в объект movies в формате: 
+    movies: {
+        'logan': '8.1'
+    }
 
-console.log(incr);
-console.log(decr);
+Проверить, чтобы все работало без ошибок в консоли */
 
-console.log('Постфиксная операция')
-console.log(incr++);
-console.log(decr--);
+'use strict';
 
-console.log('Префиксная операция')
-console.log(++incr);
-console.log(--decr);
+// Задание 1
+let NumberOfFilms = 0;
+NumberOfFilms = prompt('Сколько фильмов вы посмотрели?','');
+console.log(NumberOfFilms);
 
-console.log('5%2');
-console.log(5%2);
+// Задание 2
+let personalMovieDB = {
+  coutn : '',
+  movies: {},
+  actors: {},
+  genres: [],
+  private: false
+};
 
-console.log(2*4 == 8);
-console.log(2*4 == '8');
-console.log(2*4 === '8');
-console.log(2*4 === 8);
+console.log(personalMovieDB);
 
-const isChecket = true,
-      isClose = true;
+// Задание 3
+// 3) Задайте пользователю по два раза вопросы:
+//     - 'Один из последних просмотренных фильмов?'
+//     - 'На сколько оцените его?'
+// Ответы стоит поместить в отдельные переменные
+// Записать ответы в объект movies в формате: 
+//     movies: {
+//         'logan': '8.1'
+//     }
 
-console.log(isChecket && isClose);
-console.log(isChecket || isClose);
+let nameFilm = '';
+let ball = 0;
 
+nameFilm = prompt('Один из последних просмотренных фильмов?','');
+ball = prompt('На сколько оцените его?','')
 
+let movies = {
+  nameFilm: nameFilm,
+  ball: ball
+};
 
+console.log(movies);
 
