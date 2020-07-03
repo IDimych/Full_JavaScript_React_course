@@ -11,3 +11,16 @@ function showFirstMessage(text) {
 showFirstMessage("Hello World!");
 console.log(num);
 
+
+const logger = function() {
+  console.log("Hello")
+};
+
+logger();
+
+const calc = (a, b) => {
+  console.log('1');
+  return a + b;
+};
+
+console.log(calc(4, 6));
