@@ -1,40 +1,11 @@
 'use strict';
 
-const oldArr = ['a', 'b', 'c'];
-const newArr = oldArr.slice();
+let str = 'some';
+let strObj = new String(str);
 
-newArr[1] = 'aasdalsj';
-console.log(newArr);
-console.log(oldArr);
+console.log(typeof(str));
+console.log(typeof(strObj));
 
-const video = ['youtube', 'vimeo', 'rutube'],
-      blogs = ['wordpress', 'livejournal', 'blogger'],
-      internet = [...video, ...blogs, 'vk', 'facebook'];
+console.dir([1, 2, 3]);
 
-console.log(internet);
-
-function log (a, b, c) {
-  console.log(a);
-  console.log(b);
-  console.log(c);
-}
-
-const num = [2, 5, 7];
-
-log(...num);
-
-const array = ['a', 'b'];
-
-const newArray = [...array];
-
-const q = {
-  one: 1,
-  two: 2
-};
-
-const newObj = {...q};
-
-
-
-
-
+ 
