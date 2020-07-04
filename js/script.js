@@ -1,15 +1,12 @@
 'use strict';
 
-const arr = [2, 13, 26, 8, 10];
-arr.sort();
+let a = 5,
+    b = a;
 
-console.log(arr);
+b = b + 5;
 
-arr.sort(compareNum);
+console.log (b);
+console.log (a);
 
-console.log(arr);
 
-function compareNum(a, b) {
-  return a - b;
-}
 
