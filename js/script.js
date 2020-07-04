@@ -45,3 +45,17 @@ newNumbers.c.x=10;
 console.log(numbers);
 console.log(newNumbers);
 
+const add = {
+  d: 17,
+  e: 20
+};
+
+console.log(Object.assign(numbers, add));
+
+const clone = Object.assign({}, add);
+
+console.log(clone);
+
+clone.d = 20;
+
+console.log(clone);
