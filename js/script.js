@@ -1,13 +1,15 @@
 'use strict';
 
-const arr = [2, 3, 6, 8, 10];
+const arr = [2, 13, 26, 8, 10];
+arr.sort();
 
-arr.forEach(function(item, i, arr) {
-  console.log(`${i}: ${item} внутри массива ${arr}`);
-});
+console.log(arr);
 
-const str = prompt("", "");
-const product = str.split(',');
-product.sort();
-console.log(product.join('; '));
+arr.sort(compareNum);
+
+console.log(arr);
+
+function compareNum(a, b) {
+  return a - b;
+}
 
