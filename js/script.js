@@ -16,13 +16,7 @@ console.dir([1, 2, 3]);
    }
  };
 
- const jonh = {
-   health: 100
- };
-
-//  jonh.__proto__ = soldier;
-
-Object.setPrototypeOf(jonh, soldier);
+ const jonh = Object.create(soldier);
 
 
  console.log(jonh.armor);
