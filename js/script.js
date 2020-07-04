@@ -4,7 +4,8 @@ const box = document.getElementById('box'),
       btns = document.getElementsByTagName('button'),
       circles = document.getElementsByClassName ('circle'),
       hearts = document.querySelectorAll('.heart'),
-      oneHeart = document.querySelector('.heart');
+      oneHeart = document.querySelector('.heart'),
+      wrapper = document.querySelector('.wrapper');
 
 // box.style.backgroundColor = 'blue';
 // box.style.width = '500px';
@@ -31,4 +32,5 @@ div.classList.add('black');
 
 // document.body.append(div);
 
-document.querySelector('.wrapper').append(div);
+wrapper.append(div);
+wrapper.prepend(div);
