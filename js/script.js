@@ -1,25 +1,12 @@
 'use strict';
 
-function hello() {
-  console.log('Hello Worls!');
-}
+// 1)
+console.log(typeof(String(null)));
+console.log(typeof(String(4)));
 
-hello();
+// 2)
+console.log(typeof(5 + ''));
 
-function hi() {
-  console.log('Say hi!');
-}
+const num = 5;
 
-hi();
-
-const arr = [1, 14, 4, 30, 54],
-      sorted = arr.sort(compareNum);
-
-function compareNum(a, b) {
-  return a - b;
-}
-
-console.log(sorted);
-
-
-
+console.log('https://vk.com/catalog/' + num);
