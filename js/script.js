@@ -1,28 +1,20 @@
 'use strict';
 
-//const obj = new Object();
+const arr = [1, 2, 3, 6, 8];
 
-const options = {
-  name: 'test',
-  width: 1024,
-  heigth: 1024,
-  colors: {
-    border: 'black',
-    bg: 'red'
-  },
-  makeTest: function (){
-    console.log('Test makeTest');
-  }
-};
+console.log(arr);
 
-options.makeTest();
+arr.pop();
+console.log(arr);
 
-const {border, bg} = options.colors;
-console.log(border);
+arr.push(8);
+arr.push(10);
+console.log(arr);
 
-console.log(options);
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
 
-console.log(Object.keys(options));
-console.log(Object.keys(options).length);
-
-
+for (let value of arr) {
+  console.log(value);
+}
