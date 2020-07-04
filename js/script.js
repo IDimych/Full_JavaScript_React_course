@@ -1,27 +1,26 @@
 'use strict';
 
-function first() {
-  setTimeout(function() {
-    console.log(1);
-  }, 500);
+//const obj = new Object();
+
+const options = {
+  name: 'test',
+  width: 1024,
+  heigth: 1024,
+  colors: {
+    border: 'black',
+    bg: 'red'
+  }
+};
+
+console.log(options);
+console.log(options.name);
+// console.log(options["name"]);
+
+//delete options.name;
+
+//console.log(options);
+
+for (let key in options) {
+  console.log(`Свойство ${key}, имеет значение ${options[key]}`);
 }
-
-function second() {
-  console.log(2);
-}
-
-first();
-second();
-
-function learnJS(lang, callback) {
-  console.log(`Я учу: ${lang}`);
-  callback();
-}
-
-function done () {
-  console.log('Я пошел этот урок');
-}
-
-learnJS('JavaScript', done);
-
 
