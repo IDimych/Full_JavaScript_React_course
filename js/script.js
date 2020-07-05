@@ -32,5 +32,11 @@ div.classList.add('black');
 
 // document.body.append(div);
 
-wrapper.append(div);
-wrapper.prepend(div);
+
+// wrapper.append(div);
+// wrapper.prepend(div);
+// hearts[0].before(div);
+// hearts[0].after(div);
+// circles[0].remove();
+// hearts[0].replaceWith(circles[0]);
+
