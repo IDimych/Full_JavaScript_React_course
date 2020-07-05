@@ -9,9 +9,15 @@ const btn = document.querySelector('button');
 //   alert('Click');
 // });
 
-btn.addEventListener('mouseenter', (e) => {
+let i = 0;
+const deleteElement = (e) => {
   console.log(e.target);
-  e.target.remove();
-  // console.log('Hover');
-});
+  i++;
+  if (i == 1) {
+    btn.removeEventListener('click', deleteElement);
+  }
+};
+
+btn.addEventListener('click', deleteElement);
+
 
