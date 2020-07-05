@@ -9,6 +9,9 @@ const btn = document.querySelector('button');
 //   alert('Click');
 // });
 
-btn.addEventListener('mouseenter', () => {
-  console.log('Hover');
+btn.addEventListener('mouseenter', (e) => {
+  console.log(e.target);
+  e.target.remove();
+  // console.log('Hover');
 });
+
