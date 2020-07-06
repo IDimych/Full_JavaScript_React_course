@@ -1,0 +1,55 @@
+.btn-block {
+  padding: 10px;
+  background: gray;
+  margin-top: 10px;
+}
+
+div {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+  width: 100px;
+  height: 40px;
+  background-color: yellow;
+  border: none;
+  color: #fff;
+  border-radius: 0px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  transform: scale(0.95);
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.overlay {
+  background-color: pink;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+a {
+  display: block;
+  margin-top: 30px;
+}
